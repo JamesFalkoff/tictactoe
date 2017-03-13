@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/JamesFalkoff/tictactoe#readme",
   "dependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "prompt-sync": "^4.1.4"
   }
 }
