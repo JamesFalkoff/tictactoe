@@ -8,10 +8,10 @@ var gameState = 'active';
 
 while(gameState === 'active') {
   board.displayBoard();
-  
+
   let winner = board.checkWinner();
   if(winner) {
-    console.log('Player ' + player + ' is the winner!');
+    console.log('Player ' + winner + ' is the winner!');
     process.exit();
   } else if (board.tilesMarked() === 9) {
     console.log('The game ends in a stalemate!');
