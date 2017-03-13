@@ -33,4 +33,10 @@ describe('Board', function() {
     expect(b.tilesMarked()).to.equal(9);    
   });
 
+  it('should not allow an already marked tile to be remarked', function() {
+    let b = new Board([['X','X','X'],['0','0','-'],['-','-','-']]);
+    expect(b.toggle(0,0,'O')).to.equal(false);
+    expect(b.tiles).to.eql([['X','X','X'],['0','0','-'],['-','-','-']]);    
+  });
+
 });

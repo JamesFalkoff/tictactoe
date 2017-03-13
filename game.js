@@ -18,8 +18,16 @@ while(gameState === 'active') {
     process.exit();
   }
 
-  let nextMove = promptPlayerInput(player);
-  board.toggle(nextMove.row, nextMove.col, player);
+  let moveValid = false; 
+  while(!moveValid) {
+    let nextMove = promptPlayerInput(player);
+    if(board.toggle(nextMove.row, nextMove.col, player)) {
+      moveValid = true;
+    } else {
+      console.log('That is not a valid move because the tile is already occupied.');
+    }
+  }
+
   switchPlayer();
 }
 

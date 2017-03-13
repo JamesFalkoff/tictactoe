@@ -17,7 +17,12 @@ Board.prototype.displayBoard = function() {
 };
 
 Board.prototype.toggle = function(row, col, marker) {
-  this.tiles[row][col] = marker;
+  if(this.tiles[row][col] !== '-') {
+    return false; // tile is already marked
+  } else {
+    this.tiles[row][col] = marker;
+    return true;
+  }
 };
 
 Board.prototype.tilesMarked = function() {
