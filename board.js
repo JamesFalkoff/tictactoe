@@ -1,8 +1,12 @@
-function Board() {
+function Board(tiles) {
+  if(!tiles) {
     this.tiles = [];
     this.tiles[0] = ['-', '-', '-'];
     this.tiles[1] = ['-', '-', '-'];
     this.tiles[2] = ['-', '-', '-'];
+  } else {
+    this.tiles = tiles;
+  }
 };
 
 Board.prototype.displayBoard = function() {
