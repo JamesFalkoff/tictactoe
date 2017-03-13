@@ -1,0 +1,22 @@
+{
+  "name": "tictactoe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "board.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesFalkoff/tictactoe.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesFalkoff/tictactoe/issues"
+  },
+  "homepage": "https://github.com/JamesFalkoff/tictactoe#readme",
+  "dependencies": {
+    "prompt-sync": "^4.1.4"
+  }
+}
